@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     "django_filters",
     "corsheaders",
     "drf_spectacular",
+    "debug_toolbar",
     "ride_app",
 ]
 
@@ -47,6 +48,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "allauth.account.middleware.AccountMiddleware",
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
 ]
 
 ROOT_URLCONF = "ride_core.urls"
@@ -171,3 +173,7 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 # CSRF_TRUSTED_ORIGINS = []  # For CSRF protection, add trusted origins here
+
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
