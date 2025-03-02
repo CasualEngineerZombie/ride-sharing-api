@@ -13,11 +13,11 @@ This project implements a RESTful API using Django REST Framework to manage ride
 
 1. Clone the repository:
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/CasualEngineerZombie/ride-sharing-api.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd <project_directory>
+   cd ride-sharing-api
    ```
 3. Create and activate a virtual environment
    ```bash
